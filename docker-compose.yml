@@ -1,0 +1,18 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.13.4
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+    # not published to the host: only the API container talks to Qdrant
+
+  api:
+    build: .
+    depends_on: [qdrant]
+    ports:
+      - "8080:8080"
+    environment:
+      TMS_QDRANT_URL: http://qdrant:6333
+      TMS_EMBEDDER: ${TMS_EMBEDDER:-hashing}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      TMS_TENANT_KEYS: ${TMS_TENANT_KEYS}
+      TMS_ADMIN_KEY_SHA256: ${TMS_ADMIN_KEY_SHA256}

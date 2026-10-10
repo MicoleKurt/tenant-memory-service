@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "page": { "title": "Home", "slug": "home" },
+  "sections": [
+    {
+      "type": "hero",
+      "heading": "Gentle dentistry for the whole family",
+      "subheading": "Same-week appointments, clear pricing and a team that explains every step before it happens.",
+      "cta": { "label": "Book a consultation", "url": "/contact" },
+      "image": { "url": "https://example.com/images/clinic-reception.jpg", "alt": "Bright reception area with a smiling receptionist" }
+    },
+    {
+      "type": "feature_grid",
+      "heading": "What we do",
+      "columns": 3,
+      "items": [
+        { "title": "Check-ups and cleaning", "text": "Preventive care every six months keeps small issues small." },
+        { "title": "Whitening", "text": "Professional whitening in a single visit, with a take-home kit." },
+        { "title": "Implants and restorations", "text": "Planned with 3D imaging and explained with a written quote." }
+      ]
+    },
+    {
+      "type": "text_image",
+      "heading": "A calmer way to see the dentist",
+      "body": "Our rooms are quiet, our scheduling is unhurried, and nothing is billed without your approval.\n\nFirst visits include a full exam and a plain-language treatment plan.",
+      "image": { "url": "https://example.com/images/treatment-room.jpg", "alt": "Treatment room with natural light" },
+      "image_side": "left"
+    },
+    {
+      "type": "testimonials",
+      "heading": "Patients say",
+      "items": [
+        { "quote": "I finally stopped dreading appointments.", "author": "A. Reyes" },
+        { "quote": "Everything was explained and priced before we started.", "author": "M. Santos" }
+      ]
+    },
+    {
+      "type": "faq",
+      "heading": "Common questions",
+      "items": [
+        { "q": "Do you accept new patients?", "a": "Yes. Most new patients are seen within the week." },
+        { "q": "How much does a first visit cost?", "a": "A first visit with exam and X-rays has a fixed price that we confirm when you book." }
+      ]
+    },
+    {
+      "type": "cta_band",
+      "heading": "Ready when you are",
+      "cta": { "label": "Book now", "url": "/contact" }
+    }
+  ]
+}
